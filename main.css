@@ -1,0 +1,180 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container,
+section .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    padding: 16px 0;
+    background-color: rgb(44, 26, 204);
+    margin-bottom: 56px;
+    color:white;
+}
+
+h1 {
+    font-style: italic;
+}
+
+li {
+    display: inline;
+    list-style: none;
+    padding: 16px;
+    font-weight: bold;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+}
+
+section .container {
+    align-items:flex-start;
+}
+
+#about img {
+    max-width: 40%;
+}
+
+#about p {
+    text-align: justify;
+    margin-left: 36px;
+}
+
+#about .container h2 {
+    margin-left: 36px;
+    padding-bottom: 16px;
+    margin-bottom: 32px;
+    font-style: italic;
+    color:rgb(44, 26, 204);
+    border-bottom: 2px solid rgb(44, 26, 204);
+}
+
+#products img {
+    object-fit: cover;
+    width: 100%;
+    height: 75%;
+}
+
+#products .container h2 {
+    width: 100%;
+    margin-top: 48px;
+    padding-bottom: 16px;
+    margin-bottom: 32px;
+    font-style: italic;
+    color:rgb(44, 26, 204);
+    border-bottom: 2px solid rgb(44, 26, 204);
+}
+
+#products .produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 24.25%);
+    column-gap: 1%;
+    align-items: stretch;
+}
+
+#products .produtos p {
+    margin-top: 12px;
+}
+
+button {
+    background-color: rgb(44, 26, 204);
+    color: white;
+    cursor: pointer;
+    border: none;
+    padding: 8px;
+    font-weight: bold;
+    border-radius: 6px;
+    margin-top: 12px;
+    width: 100%;
+}
+
+h3 {
+    margin-top: 36px;
+}
+
+@media screen and (max-width: 767px) {
+    .conteudo {
+        display:block;
+    }
+
+    .container{
+        max-width: 90%;
+    }
+
+    #about img {
+        max-width: 100%;
+        margin-bottom: 16px;
+    }
+
+    section .container {
+        display: block;
+    }
+
+    #about p {
+        text-align: justify;
+        margin-left: 0px;
+    }
+
+    #about .container h2 {
+        margin-left: 0px;
+    }
+
+    #products .produtos {
+        display: block;
+    }
+
+    button {
+        margin-bottom: 24px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 820px) {
+    .container{
+        max-width: 90%;
+    }
+
+    #about img {
+        max-width: 100%;
+        margin: 0px 16px 50px 50px;
+    }
+
+    #about p {
+        text-align: justify;
+        margin-left: 0px;
+    }
+
+    section .container {
+        display: block;
+    }
+
+    #about p {
+        text-align: justify;
+        margin-left: 0px;
+    }
+
+    #about .container h2 {
+        margin-left: 0px;
+    }
+
+    #products .produtos {
+        display: grid;
+        grid-template-columns: repeat(2, 49.5%);
+        column-gap: 1%;
+        row-gap: 10%;
+        align-items: stretch;
+    }
+}
